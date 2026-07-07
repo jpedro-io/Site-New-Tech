@@ -19,4 +19,4 @@ Código versionado e organizado.
 
 ### 🌐 Acesse o site
 Você pode visualizar o site em tempo real através deste link:
-https://jpcr135.github.io/Site---New-Tech/
+https://jpedro-io.github.io/Site---New-Tech/ 
