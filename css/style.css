@@ -107,7 +107,7 @@
   .ev p { margin-top:8px; font-size:15px; line-height:1.7; color:#A6BBDD; max-width:640px; }
 
   /* ---------- portfólio ---------- */
-  .pf { display:grid; grid-template-columns:1.35fr 1fr; grid-template-rows:auto auto; gap:22px; margin-top:56px; }
+  .pf { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:56px; }
   .pc { border:1px solid rgba(120,160,255,.22); border-radius:12px; overflow:hidden; background:#0E1B3A; }
   .pc .thumb { height:250px; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
   .pc .thumb img.shot { width:100%; height:100%; object-fit:contain; }
@@ -116,8 +116,8 @@
   .kpis div { flex:1; font-size:12.5px; color:#9DB9E8; font-weight:600; border-left:1px solid rgba(120,160,255,.18); padding-left:14px; }
   .kpis div:first-child { border-left:0; padding-left:0; }
   .kpis b { display:block; font-size:19px; color:#fff; font-weight:800; }
-  .pc.big { grid-row:span 2; }
-  .pc.big .thumb { height:100%; min-height:522px; }
+  .pc.big { grid-column:1 / -1; }
+  .pc.big .thumb { height:auto; aspect-ratio:1830/922; }
   .pc .meta { padding:20px 24px; border-top:1px solid rgba(120,160,255,.18); display:flex; justify-content:space-between; align-items:center; }
   .pc .meta b { font-size:16.5px; color:#fff; }
   .pc .meta span { font-size:12.5px; color:#7E96C2; display:block; margin-top:3px; font-weight:500; }
@@ -220,6 +220,7 @@
     .hist { flex-direction:column; gap:48px; }
     .hist .l { flex:auto; }
     .row { flex-direction:column; gap:14px; }
+    .row .t, .row .d, .row .tags { flex:0 0 auto; }
     .grid3 { flex-direction:column; gap:26px; }
     .grid3 .col { flex:auto; width:100%; }
     .pf { grid-template-columns:1fr; }
@@ -251,7 +252,7 @@
     .stat { flex:1 1 100%; border-left:0; border-top:1px solid rgba(120,160,255,.14); }
     .stat:first-child { border-top:0; }
     .pc .thumb { height:200px; }
-    .pc.big .thumb { height:240px; }
+    .pc.big .thumb { height:auto; aspect-ratio:1830/922; }
     .pc .meta { flex-direction:column; align-items:flex-start; gap:12px; }
     .pc .meta .u, footer .fl { overflow-wrap:anywhere; }
     .kpis { flex-wrap:wrap; gap:12px 0; }
