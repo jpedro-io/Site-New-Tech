@@ -244,7 +244,7 @@
     .navcta { padding:10px 13px; font-size:12.5px; gap:7px; }
     .navcta svg { width:15px; height:15px; }
     .hero { padding:44px 20px 76px; gap:56px; }
-    .float.f1 { top:-16px; right:2px; padding:9px 12px; font-size:12px; }
+    .float.f1 { top:-48px; right:0; padding:9px 12px; font-size:12px; }
     .float.f2 { bottom:-14px; left:2px; padding:9px 12px; font-size:12px; }
     .browser .page.shotpage img { height:250px; }
     .row { flex-direction:column; gap:12px; padding:26px 2px; }
@@ -265,5 +265,12 @@
     footer { flex-direction:column; align-items:flex-start; gap:26px; padding:36px 20px; }
     footer .social a { width:44px; height:44px; }
     footer .fl br { display:none; }
+  }
+  @media (max-width:480px) {
+    nav { padding:0 12px; }
+    .brand img { height:30px; }
+    .navcta { padding:9px 10px; font-size:11.5px; gap:6px; }
+    .navcta svg { width:13px; height:13px; }
+    .menu-btn { padding:8px 6px; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
